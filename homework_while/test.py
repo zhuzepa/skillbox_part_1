@@ -47,9 +47,28 @@
 #         print('знать команды r,w,q')
 
 
-cash = int(input('Сколько мне платят ЗП: '))
+# cash = int(input('Сколько мне платят ЗП: '))
+#
+# if cash >= 230000:
+#     print('Делаем красивую работу')
+# else:
+#     print('Открывается вакансия на HH')
 
-if cash >= 230000:
-    print('Делаем красивую работу')
-else:
-    print('Открывается вакансия на HH')
+
+# large_number = 7375332359
+# print(large_number % 10)
+# print(large_number / 10)
+# print(large_number // 100000)
+
+# a = 1
+# while a < 10:
+#     print(f'цикл выполнится {a} раз')
+#     a += 1
+# print(a)
+# print('цикл окончен')
+
+x = 10
+while x > 0:
+    print('{}'.format(x))
+    x -= 1
+print('С новым годом')
