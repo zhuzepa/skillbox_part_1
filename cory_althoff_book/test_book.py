@@ -254,17 +254,17 @@
 # result = add_mult(10, 15, 25)
 # print(result)
 # ----
-# def greet(name, age, city, gender=None, occupatiom=None):
+# def greet(name: str, age: int, city: str, gender: str = None, occupatiom=None):
 #     print(f'Привет {name}, тебе {age} лет и ты живешь в {city}')
 #     if gender:
 #         print(f'Твой пол {gender}')
 #     if occupatiom:
 #         print(f'Ты работаешь {occupatiom}')
-# #
 #
-# greet('Алекс', 25, 'Турция', 'Петушок', 'QA')
-
-# def one(a):
+#
+# greet('Алекс', 25)
+#
+# # def one(a):
 #     return a / 2
 #
 #
@@ -277,13 +277,276 @@
 #
 # results = two(result)
 # print(results)
+#
+# def convert(string):
+#     try:
+#         return float(string)
+#     except ValueError:
+#         print('Не удалось преобразовать строку в число с плавающей точкой')
+#
+#
+# c = convert('d')
+# print(c)
+# name = input('Как вас зовут? ')
+# print('Привет,', name)
 
-def convert(string):
-    try:
-        return float(string)
-    except ValueError:
-        print('Не удалось преобразовать строку в число с плавающей точкой')
+
+# КОНТЕЙНЕРЫ
 
 
-c = convert('d')
-print(c)
+# print('привет'.upper())
+# print('привет'.replace('п', 'П'))
+# print('привет'.lower())
+
+# a = list()
+# print(type(a))
+# b = []
+# print(type(b))
+
+# fruits = ['яблоко', 'банан', 'морковка']
+# fruits.append('Киви')
+# fruits.append('Арбуз1')
+# fruits.append(True)
+# fruits.append({'animal': 'тигер'})
+# fruits.pop(4)
+# print(fruits)
+
+# for fruit in fruits:
+#     if fruit == 'Арбуз':
+#         print('цикл окончен')
+#         break
+# else:
+#     print("Арбазуа нет")
+
+# color1 = ['blue', 'red']
+# color2 = ['black', 'white']
+# color = color2 + color1
+# # print('black' in color1)
+# # print('gree' not in color2)
+# # print(len(color2))
+# # print(color)
+#
+# guess = str(input('Угадайте цвет: '))
+#
+# if guess in color:
+#     print('Вы угадали цвет')
+# else:
+#     print('Попробуй ещё раз')
+#     guess = str(input('Угадайте цвет: '))
+#     if guess in color:
+#         print('Вы угадали цвет')
+#     else:
+#         print('Попробуй ещё раз')
+
+
+# КОРТЕЖИ
+
+# color = ()
+# print(type(color))
+#
+# color = tuple()
+# print(type(color))
+
+# rndm = ('М. Джексон', 1968, True)
+# print(rndm)
+#
+# one = ("Harry Potter",)
+# print(one)
+# a = (9) + 1
+# print(type(a))й
+
+# dys = ('1984', 'О дивный новый мир', '451 градус по Фарингейту')
+# print('1985' not in dys)
+
+
+# Словари
+
+# fruits = {
+#     "яблоко": "красное",
+#     "банан": "желтый",
+#     "кол-во": 50
+# }
+# print(fruits)
+#
+
+
+# books = {
+#     "Дракула": "Стокер",
+#     "1984": "Оруэлл",
+#     "Процесс": "Кафка",
+#     "ЯП": "C#"
+# }
+# print(books)
+# del books["ЯП"]
+# print(books)
+
+
+# rhymes = {
+#     "1": "смех",
+#     "2": "синий",
+#     "3": "я",
+#     "4": "этаж",
+#     "5": "гараж",
+#     "6": "маями",
+# }
+# n = input('Введите число: ')
+# if n in rhymes:
+#     rhyme = rhymes[n]
+#     print(rhyme)
+# else:
+#     print('Не найдено')
+
+
+# Контейнеры внутри контейнеров
+
+# lists = []
+# rap = [
+#     "Баста",
+#     "Кравц",
+#     "Злой дух",
+#     "25/17"
+# ]
+#
+# rock = [
+#     "Наутилус Помпилус",
+#     "Кино",
+#     "Ария"
+# ]
+#
+# djs = [
+#     "Tiesto",
+#     "Martix Garrix",
+#     "David Guestta",
+#     "Dmitru Vegas & Like Mike",
+#     "Alok",
+#     "Gordo"
+# ]
+#
+# lists.append(rap)
+# lists.append(rock)
+# lists.append(djs)
+#
+# print(lists[0][0])
+
+# locations = []
+#
+# tula = (54.1960, 37.6182)
+# moscow = (55.7522, 37.6155)
+# vlg = (47.7491, 44.5018)
+#
+# locations.append(tula)
+# locations.append(moscow)
+# locations.append(vlg)
+# print(locations)
+
+# eights = ["Эдгар Алан По",
+#           "Чарльз Диккен"]
+#
+# nines = [
+#     "Хемингуэй",
+#     "Фицджеральд",
+#     "Оруэлл"
+# ]
+#
+# authors = (eights, nines)
+# print(authors)
+#
+
+# bday = {
+#     "Хемингуэй": "21.07.1899",
+#     "Фицджеральд": "24.09.1986"
+# }
+# my_list = [bday]
+# print(my_list)
+#
+# my_typle = (bday,)
+# print(my_typle)
+
+# ru = {
+#     "расположение": (55.7522, 37.6155),
+#     "знаменитость": ["Андрей Звагинцев", "Юрий Быков", "Петр Буслов"],
+#     "факты": {"город": "Москва", "странна": "Россия"}
+# }
+# print(ru["факты"]["город"])
+
+
+# Практика
+
+# 1. Создайте список ваших любимых музыкантов.
+# rap = [
+#     "Моргенштерн",
+#     "Jah Khalib",
+#     "2pac",
+#     "Каспийский груз"
+# ]
+# print(rap)
+# print(type(rap))
+#
+# raps = []
+# raps.append('ЮГ')
+# raps.append('Oxxxymiron')
+# raps.append('Miyagi')
+# print(raps)
+# print(type(raps))
+
+# 2. Создайте список кортежей, где каждый кортеж содержит долготу и широту
+# любого места, в котором вы жили или которое посещали.
+
+# where_lived = [
+#     (36.5438, 31.9998),
+#     (27.2574, 33.8129)
+# ]
+# print(where_lived[0])
+# print(type(where_lived))
+#
+# where_liveds = []
+# alaniya = (36.5438, 31.9998)
+# hurgada = (27.2574, 33.8129)
+#
+# where_liveds.append(alaniya)
+# where_liveds.append(hurgada)
+# print(where_liveds[0])
+# print(type(where_liveds[0]))
+
+# 3. Создайте словарь, содержащий различные данные о вас: рост, любимый
+# цвет, любимый актер и т.д.
+#
+# my_details = {
+#     "name": 'Sexy machine',
+#     "height": 220,
+#     "weight": 100,
+#     "favorites_tv_series": 'Кремниевая долина'
+# }
+# print(my_details)
+# print(type(my_details))
+
+
+# 4. Напишите программу, которая запрашивает у пользователя его вес, люби-
+# мый цвет или актер, и возвращает результат из словаря, созданного в преды-
+# дущем задании.
+
+# data = input('Введите вес / высоту / сериал / имя: ')
+# if data in my_details:
+#     my_detail = my_details[data]
+#     print(my_detail)
+# else:
+#     print('нет такого')
+
+# 5. Создайте словарь, связывающий ваших любимых музыкантов со списком ва-
+# ших любимых песен, написанных ими.
+
+# music = {
+#     "2517": "Жду чуда",
+#     "L'one": "Якутеночка",
+#     "ST": "Вечно молодой"
+# }
+# print(music)
+
+# 6. Множества (set)
+
+# photo_sizes = {"1920x1080", "800x600"}
+# video_sizes = {"1024x768", "2560x1896"}
+# all_size = photo_sizes.union(video_sizes)
+# all_size.add("1920x1080")
+# print(all_size)
+# print(type(all_size))

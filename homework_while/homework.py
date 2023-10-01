@@ -40,14 +40,14 @@
 #
 # Напишите программу, которая спрашивает у пользователя, сколько на улице градусов, и, исходя из погоды, считает количество пройденных по стадиону метров и выводит ответ на экран.
 
-# outdoor_temperature = int(input('Какая температура на улице: '))
-# run = 0
-# while outdoor_temperature >= 15:
-#     run += 20
-#     outdoor_temperature -= 2
-#     if outdoor_temperature <= 15:
-#         break
-#     run += 10
+outdoor_temperature = int(input('Какая температура на улице: '))
+run = 0
+while outdoor_temperature >= 15:
+    run += 20
+    outdoor_temperature -= 2
+    if outdoor_temperature <= 15:
+        break
+    run += 10
 #
 # print(run)
 
