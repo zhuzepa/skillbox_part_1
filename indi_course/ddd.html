@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
+</head>
+<body style="margin-left: 0px; margin-right: 0px; margin-top:0px; margin-bottom: 0px; background-color: #F5F7FB; color:#3A3A3A; cursor: auto; font-size: 14px;font-family:Arial, Tahoma,Geneva,sans-serif;">
+
+    <center>
+        <table style="min-width: 360px;" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <table style="width:100%; max-width: 648px;" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="22">&nbsp;</td>
+    </tr><!--padding-top: 22px - outlook issue -->
+    <tr>
+        <td width="12">&nbsp;</td><!--padding-left: 12px - outlook issue -->
+        <td style="font-size: 16px; line-height: 20px;  max-width: 596px;">
+            {% if recipient.first_name %}
+                Здравствуйте, <strong>{{ recipient.first_name }}!</strong>
+            {% else %}
+                Здравствуйте!
+            {% endif %}
+        </td>
+        <td width="64"><img src="{{ logo }}" alt="logo" height="34" width="40" style="outline:none;color:#ffffff;max-width:unset!important;text-decoration:none" class="CToWUd" data-bit="iit"/></td>
+        <td width="12">&nbsp;</td> <!--padding-right: 12px - outlook issue -->
+    </tr>
+    <tr>
+        <td height="23">&nbsp;</td>
+    </tr> <!--padding-bottom: 24px - outlook issue -->
+</table>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="12">&nbsp;</td> <!--padding-left: 24px - outlook issue -->
+                    <td style="max-width: 600px; background-color: white; border-radius: 20px; word-break: break-word;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="12" rowspan=120>&nbsp;</td>
+                                <td height="32">&nbsp;</td> <!--padding-top: 24px - outlook issue -->
+                                <td width="12" rowspan=120>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="width: 96%;">
+                                        <span style="font-size: 28px; line-height: 32px;">
+                                            Сброс пароля
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td height="1">
+                                    <hr noshade="" color="#CDCED1" height="1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td style="font-size: 16px; line-height: 20px; letter-spacing: 0.4px; color:#3A3A3A;">
+                                    Вы запросили <strong>восстановление пароля.</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="5">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td style="font-size: 16px; line-height: 20px; letter-spacing: 0.4px; color:#3A3A3A;">
+                                    Для продолжения нажмите на кнопку <strong>«Изменить пароль»</strong> – старый пароль
+                                    сбросится, останется только задать новый.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="80%"
+                                           style="background: #304FFE; border-radius: 20px; height: 52px;">
+                                        <tr>
+                                            <td width="19" style="width: 19px; ">&nbsp;</td>
+                                            <td style="height: 38px; width: 100%;" align="center">
+                                                <a href={{ link }}
+                                                           style="height: 38px; text-align: center; line-height: 38px;
+                                                   text-decoration: none; padding: 0; display: block; border-radius:
+                                                   20px; color: #ffffff; font-size: 16px; letter-spacing: 0.6px;
+                                                   -webkit-text-size-adjust:none;">
+                                                Изменить пароль
+                                                </a>
+                                            </td>
+                                            <td width="19" style="width: 19px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td style="font-family: 'Arial'; font-style: normal; font-weight: 400; font-size: 14px;
+										line-height: 20px; color: #99A2AD; letter-spacing: 0.2px;">
+                                    Если приведенная выше ссылка не работает, пожалуйста, скопируйте и вставьте в
+                                    адресную строку вашего браузера следующий текст:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="5">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td style="font-family: 'Arial'; word-break: break-all; font-style: normal; font-weight: 400; font-size: 14px;
+                                                        line-height: 20px; color: #3455FF; letter-spacing: 0.2px;">
+                                    {{ link }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                                                        <tr>
+                                <td height="1">
+                                    <hr noshade="" color="#CDCED1" height="1px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; max-width: 660px; color: #99A2AD; font-size: 11px; line-height: 16px;
+										overflow: hidden; letter-spacing: 0.4px;">
+                                    © 2023, Акционерное общество «Первая Грузовая Компания»
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                            <tr>
+                                <td height="20">&nbsp;</td> <!--padding-top: 32px - outlook issue -->
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="12" rowspan=10>&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="32">&nbsp;</td>
+    </tr> <!--padding-bottom: 24px - outlook issue -->
+</table>
+
+    </center>
+
+    <img src="{{ tracking_url }}" height="1px" width="1px"/>
+</body>
+</html>
+
+
