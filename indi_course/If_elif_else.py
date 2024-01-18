@@ -133,3 +133,16 @@
 '''
 Напишите программу, которая на вход получает координаты двух клеток шахматной доски и выводит сообщение о том, являются ли эти клетки одного цвета. Столбцы на шахматной доске обозначаются английскими строчными буквами.
 '''
+s = '_abcdefgh'
+coord_1 = input()
+coord_2 = input()
+letter_1 = coord_1[0]
+letter_2 = coord_2[0]
+column_1 = s.find(letter_1)
+column_2 = s.find(letter_2)
+row_1 = int(coord_1[1])
+row_2 = int(coord_2[1])
+if (row_1 + column_1) % 2 == (row_2 + column_2) % 2:
+    print('YES')
+else:
+    print('NO')
